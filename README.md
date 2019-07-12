@@ -16,9 +16,9 @@ Album of photos including features like:
 Adding.
 Deleting.
 Change title.
-Switch Order.
 
 Add Ideas here:
+- 
 {...}
 
 Cool tools for support:
