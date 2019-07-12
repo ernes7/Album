@@ -29,4 +29,13 @@ https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_appli
 # Material UI components. 
 https://material-ui.com/getting-started/installation/
 
+### Files ###
+- top.js
+    Hero section
+
+- upload.js
+    Upload component
+
+- album.js
+    Main album file
 
