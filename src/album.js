@@ -73,7 +73,10 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Upload/> 
+                  <Button className={classes.button} >
+                  <DeleteIcon color="secondary" /> 
+                  </Button>
+                 
                   </CardActions>
                 </Card>
               </Grid>

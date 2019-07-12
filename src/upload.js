@@ -17,7 +17,7 @@ export default function Upload() {
     type="file"
   />
   <label htmlFor="contained-button-file">
-    <Fab variant="extended" color="primary" aria-label="Add" component="span" className={classes.fab}>
+    <Fab color="primary" aria-label="Add" component="span" className={classes.fab}>
       <AddIcon/>
     </Fab>
   </label>
