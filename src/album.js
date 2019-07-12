@@ -19,7 +19,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import Upload from './upload';
 import Top from './top';
-
+import Foot from './foot';
 import {useStyles} from './styles';
 
 
@@ -54,7 +54,6 @@ export default function Album() {
       <main>
         <Top />
         <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
           <Grid container spacing={4}>
             {cards.map(card => (
               <Grid item key={card} xs={12} sm={6} md={4}>
@@ -74,7 +73,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                   <Button className={classes.button} >
-                  <DeleteIcon color="secondary" /> 
+                    <DeleteIcon color="secondary" /> 
                   </Button>
                  
                   </CardActions>
@@ -84,17 +83,7 @@ export default function Album() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
-        </Typography>
-        <MadeWithLove />
-      </footer>
-      {/* End footer */}
+        <Foot />
     </React.Fragment>
   );
 }
