@@ -18,6 +18,7 @@ import Icon from '@material-ui/core/Icon';
 import DeleteIcon from '@material-ui/icons/Delete';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import Upload from './upload';
+import Top from './top';
 
 import {useStyles} from './styles';
 
@@ -51,38 +52,7 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Album layout
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
-            </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Order by Name
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Fab size="small" color="secondary" aria-label="Delete" className={classes.fab}>
-                      <DeleteIcon />
-                    </Fab>
-                </Grid>
-              </Grid>
-            </div>
-          </Container>
-        </div>
+        <Top />
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
@@ -103,17 +73,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Fab size="small" color="primary" aria-label="Edit" className={classes.fab}>
-                      <Icon>face_icon</Icon>
-                    </Fab>
-                    <Button variant="contained" color="default" className={classes.button}>
-                      Download
-                        <CloudDownloadIcon className={classes.rightIcon} />
-                    </Button>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Upload/>
+                    <Upload/> 
                   </CardActions>
                 </Card>
               </Grid>

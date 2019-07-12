@@ -1,6 +1,9 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import {useStyles} from './styles';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+ 
 
 export default function Upload() {
     const classes = useStyles();
@@ -14,9 +17,9 @@ export default function Upload() {
     type="file"
   />
   <label htmlFor="contained-button-file">
-    <Button variant="contained" component="span" className={classes.button}>
-      Upload
-    </Button>
+    <Fab variant="extended" color="primary" aria-label="Add" component="span" className={classes.fab}>
+      <AddIcon/>
+    </Fab>
   </label>
   </div>
   );

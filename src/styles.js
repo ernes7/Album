@@ -30,4 +30,14 @@ export const useStyles = makeStyles(theme => ({
       backgroundColor: theme.palette.background.paper,
       padding: theme.spacing(6),
     },
+    input: {
+      display: 'none',
+    },
+
+    fab: {
+      margin: theme.spacing(1),
+    },
+    extendedIcon: {
+      marginRight: theme.spacing(1),
+    },
   }));
