@@ -22,19 +22,6 @@ import Top from './top';
 import Foot from './foot';
 import {useStyles} from './styles';
 
-
-function MadeWithLove() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Material-UI
-      </Link>
-      {' team.'}
-    </Typography>
-  );
-}
-
 const cards = [1, 2, 3];
 
 export default function Album() {
