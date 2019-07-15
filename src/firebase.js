@@ -1,3 +1,5 @@
+import * as firebase from 'firebase';
+
 // Set the configuration for your app
   // TODO: Replace with your project's config object
   const config = {
@@ -12,7 +14,7 @@
   firebase.initializeApp(config);
 
   // Get a reference to the storage service, which is used to create references in your storage bucket
-  const storage = firebase.storage();
+const storage = firebase.storage();
 
 // Create a storage reference from our storage service
 const storageRef = storage.ref();
@@ -25,3 +27,8 @@ const imagesRef = storageRef.child('images');
 const spaceRef = storageRef.child('images/space.jpg');
 // spaceRef now points to "images/space.jpg"
 // imagesRef still points to "images"
+
+var file = 'images/eroi.jpg';
+ref.put(file).then(function(snapshot){
+    console.log('Uploaded the file');
+})

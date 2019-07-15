@@ -17,7 +17,7 @@ import AddIcon from '@material-ui/icons/Add';
 import Icon from '@material-ui/core/Icon';
 import DeleteIcon from '@material-ui/icons/Delete';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import Upload from './upload';
+import Uploadb from './uploadb';
 import Top from './top';
 import Foot from './foot';
 import {useStyles} from './styles';

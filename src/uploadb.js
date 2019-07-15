@@ -3,9 +3,8 @@ import Button from '@material-ui/core/Button';
 import {useStyles} from './styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
- 
 
-export default function Upload() {
+export default function Uploadb() {
     const classes = useStyles();
   return (
     <div>
@@ -18,7 +17,8 @@ export default function Upload() {
   />
   <label htmlFor="contained-button-file">
     <Fab color="primary" aria-label="Add" component="span" className={classes.fab}>
-      <AddIcon/>
+      <AddIcon>
+      </AddIcon>
     </Fab>
   </label>
   </div>
