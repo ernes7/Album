@@ -1,12 +1,27 @@
 // Set the configuration for your app
   // TODO: Replace with your project's config object
   var config = {
-    apiKey: '<your-api-key>',
-    authDomain: '<your-auth-domain>',
-    databaseURL: '<your-database-url>',
-    storageBucket: '<your-storage-bucket>'
+    apiKey: "AIzaSyDYVwUCNfPnIWFvW8QVRfud20c5cMiz-5k",
+    authDomain: "album-3.firebaseapp.com",
+    databaseURL: "https://album-3.firebaseio.com",
+    projectId: "album-3",
+    storageBucket: "album-3.appspot.com",
+    messagingSenderId: "486487853703",
+    appId: "1:486487853703:web:a4c433269e0c8fd8"
   };
   firebase.initializeApp(config);
 
   // Get a reference to the storage service, which is used to create references in your storage bucket
   var storage = firebase.storage();
+
+// Create a storage reference from our storage service
+var storageRef = storage.ref();
+
+// Create a child reference
+var imagesRef = storageRef.child('images');
+// imagesRef now points to 'images'
+
+// Child references can also take paths delimited by '/'
+var spaceRef = storageRef.child('images/space.jpg');
+// spaceRef now points to "images/space.jpg"
+// imagesRef still points to "images"
