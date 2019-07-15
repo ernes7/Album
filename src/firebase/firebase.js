@@ -1,4 +1,5 @@
-import * as firebase from 'firebase';
+import firebase from 'firebase/app'
+import 'firebase/storage';
 
 // Set the configuration for your app
   // TODO: Replace with your project's config object
@@ -32,3 +33,7 @@ var file = 'images/eroi.jpg';
 ref.put(file).then(function(snapshot){
     console.log('Uploaded the file');
 })
+
+export {
+  storage, fireabse as default
+}

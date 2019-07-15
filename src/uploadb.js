@@ -3,6 +3,9 @@ import Button from '@material-ui/core/Button';
 import {useStyles} from './styles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
+import firebase from './firebase/firebase';
+
+
 
 export default function Uploadb() {
     const classes = useStyles();
