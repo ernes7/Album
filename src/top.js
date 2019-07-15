@@ -8,7 +8,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-import Uploadb from './uploadb';
+import Uploadb from './components/Upload/uploadb';
+import Uploadfile from './components/Upload/uploadfile';
 
 import {useStyles} from './styles';
 
@@ -30,9 +31,9 @@ import {useStyles} from './styles';
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Uploadb >
+                  <Uploadfile >
             
-                  </Uploadb>
+                  </Uploadfile>
                 </Grid>
 
 

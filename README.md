@@ -8,6 +8,7 @@ Install it and run:
 npm install
 npm start
 ```
+-> Need to install Firebase also.
 
 ## The idea behind the example
 

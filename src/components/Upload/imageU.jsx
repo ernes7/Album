@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import {storage} from '../firebase';
 
 class ImageU extends component {

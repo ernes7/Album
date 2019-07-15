@@ -29,11 +29,7 @@ const spaceRef = storageRef.child('images/space.jpg');
 // spaceRef now points to "images/space.jpg"
 // imagesRef still points to "images"
 
-var file = 'images/eroi.jpg';
-ref.put(file).then(function(snapshot){
-    console.log('Uploaded the file');
-})
 
 export {
-  storage, fireabse as default
+  storage, firebase as default
 }
