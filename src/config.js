@@ -1,6 +1,6 @@
 // Set the configuration for your app
   // TODO: Replace with your project's config object
-  var config = {
+  const config = {
     apiKey: "AIzaSyDYVwUCNfPnIWFvW8QVRfud20c5cMiz-5k",
     authDomain: "album-3.firebaseapp.com",
     databaseURL: "https://album-3.firebaseio.com",
@@ -12,16 +12,16 @@
   firebase.initializeApp(config);
 
   // Get a reference to the storage service, which is used to create references in your storage bucket
-  var storage = firebase.storage();
+  const storage = firebase.storage();
 
 // Create a storage reference from our storage service
-var storageRef = storage.ref();
+const storageRef = storage.ref();
 
 // Create a child reference
-var imagesRef = storageRef.child('images');
+const imagesRef = storageRef.child('images');
 // imagesRef now points to 'images'
 
 // Child references can also take paths delimited by '/'
-var spaceRef = storageRef.child('images/space.jpg');
+const spaceRef = storageRef.child('images/space.jpg');
 // spaceRef now points to "images/space.jpg"
 // imagesRef still points to "images"
