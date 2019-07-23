@@ -50,6 +50,7 @@ class Uploadfile extends Component {
         return (
             <div>
                 <input
+                
                 accept="image/*"
                 //className={classes.input}
                 id="contained-button-file"
@@ -58,10 +59,11 @@ class Uploadfile extends Component {
                 onChange={this.handleChange}
                 />
             <label htmlFor="contained-button-file">
-                <Fab onClick={this.handleUpload} color="primary" aria-label="Add" component="span" >
-                <AddIcon/>
+                <Button onClick={this.handleUpload} color="primary" aria-label="Add" component="span" >
+                Upload
 
-                </Fab>
+                </Button>
+                <img src={this.state.url} alt='Uploaded images'></img>
             </label>
             </div>
           );

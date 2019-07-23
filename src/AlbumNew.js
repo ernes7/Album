@@ -15,7 +15,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 import Top from "./top";
 import Foot from "./foot";
-//import { useStyles } from "./styles";
+import { useStyles } from "./styles";
 
 class AlbumNew extends Component {
   constructor(props) {
